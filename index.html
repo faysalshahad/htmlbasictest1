@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD FAYSAL SHAHAD HTML Assignment Submission</title>
+     <!-- Link to favicon icon -->
+    <link rel="icon" type="image/x-icon" href="faysal_favicon.ico">
+     <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MD FAYSAL SHAHAD HTML Assignment Submission</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#image-link">Image Link</a></li>
+            <li><a href="#video-section">Video Section</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="image-link">
+            <h2>Image Link</h2>
+            <a href="mailto:example@email.com">
+                <img src="https://images.unsplash.com/photo-1593108408993-58ee9c7825c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Email Image" 
+                     width="900px" 
+                     height="600px">
+            </a>
+        </section>
+        
+        <section id="video-section">
+            <h2>Video Section</h2>
+            <video width="800px" controls poster="https://assets.codepen.io/32795/poster.png">
+                <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                <source src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
+                <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
+                <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
+                <track kind="subtitles" src="subtitles_de.vtt" srclang="de" label="German Deutsch">
+                <!--Alternative or Fallback Message if video is unable to play-->
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form id="myForm" action="#" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" minlength="3" maxlength="50" required placeholder=" Example: MD FAYSAL SHAHAD"><br><br>
+                    
+                    <label for="phone">Your Phone (BD format):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[+]?880[0-9]{10}" required placeholder="+880XXXXXXXXX"><br><br>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com"><br><br>
+                    
+                    <label for="country">Your Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                          <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                         <option value="France">France</option>
+                         <option value="Germany">Germany</option>
+                          <option value="Japan">Japan</option>
+                        <option value="New Zealand">New Zealand</option>                        
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>  
+                    </select><br><br>
+                    
+                    <label for="state">Your State:</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select State</option>
+                          <option value="Auckland">Auckland</option>
+                        <option value="Barisal">Barisal</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Bavaria">Bavaria</option>
+                        <option value="British Columbia">British Columbia</option>
+                         <option value="California">California</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Hamburg">Hamburg</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="London">London</option>
+                        <option value="Lyon">Lyon</option>
+                        <option value="Manchester">Manchester</option>
+                         <option value="Mymensingh">Mymensingh</option>
+                         <option value="Melbourne">Melbourne</option>
+                        <option value="New York">New York</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Osaka">Osaka</option>
+                           <option value="Paris">Paris</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Sao Paulo">Sao Paulo</option>
+                        <option value="Sydney">Sydney</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Victoria">Victoria</option>
+                         <option value="Wellington">Wellington</option>
+                        <option value="Yorkshire">Yorkshire</option>                        
+                    </select><br><br>
+                    
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Type Your Message Here"></textarea><br><br>
+                    <!--Linking the Submit button to the JavaScript function-->
+                    <input type="submit" value="Submit" onclick="handleSubmit(event)">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 HTML Assignment created by MD FAYSAL SHAHAD. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JS file -->
+<script src="script.js"></script>
+</body>
+</html>
